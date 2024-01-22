@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <style>
+       body{
+            text-align: center;
+            background-color: rgb(164, 143, 207);
+        }
+        h3{
+            color: white;
+            text-align: center;
+            font-size: 45px;
+            background-color: rgb(104, 74, 164);
+         }
+        a{
+        display: inline-block;
+        padding: 10px 20px;
+        background-color:  rgb(104, 74, 164);
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-bottom: 6pxpx;
+        font-size: 20px;
+        margin-top: 10px;
+        }
+        div{
+            border: 2px solid mediumpurple;
+            padding: 10px;
+            border-radius: 5px;
+            width: 350px;
+            box-shadow: 0 4px 8px purple;
+            height: 180px;
+            margin-left: 650px;
+            margin-top: 80px;
+            font-size: 22px;
+            color: white;
+
+        }
+    </style>   
+</head>
+
+<body>
+    <h3>Selected Categories  Details</h3>
+    <div>
+        
+        Product Id:<%=prdObj.pid%><br/>
+        Product Name:<%=prdObj.pname%><br/>
+        Price:<%=prdObj.price%><br/>
+        Quantity:<%=prdObj.quantity%><br/>
+        Categories:  <%=prdObj.categories%><br/>     
+    </div>
+
+    
+    <a href="/">Back to Home</a> <br>   
+    <a href="/prd/AllDepts">Back to All Depts</a>
+     
+</body>
+
+</html>

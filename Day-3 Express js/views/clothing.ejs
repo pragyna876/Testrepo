@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <style>
+        body{
+             text-align: center;
+             background-color: mediumturquoise;
+         }
+         h3{
+             color: white;
+             text-align: center;
+             font-size: 45px;
+             background-color: rgb(36, 62, 61);
+          }
+         a{
+         display: inline-block;
+         padding: 10px 20px;
+         background-color:  rgb(5, 35, 34);
+         color: #ffffff;
+         text-decoration: none;
+         border-radius: 5px;
+         margin-bottom: 6pxpx;
+         font-size: 20px;
+         margin-top: 10px;
+         }
+         div{
+             border: 2px solid #4e5f5e;
+             padding: 10px;
+             border-radius: 5px;
+             width: 450px;
+             box-shadow: 0 4px 8px rgb(11, 75, 73);
+             height: 300px;
+             margin-left: 600px;
+             margin-top: 80px;
+             font-size: 22px;
+             color: white;
+             text-align: left;
+            
+ 
+         }
+         ul li{
+            list-style: none;
+         }
+     </style>   
+    
+</head>
+
+<body>
+    <h3>Clothing Products</h3>
+    <div>
+        
+        <% if (clObj && clObj.length > 0) { %>
+            <ul>
+              <% clObj.forEach(product => { %>
+                <li>
+                  Product ID: <%= product.pid %><br>
+                  Name:<%= product.pname %><br>
+                  Price: <%= product.price %><br>
+                  Quantity: <%= product.quantity %><br>
+                  Categories:<%= product.categories%>
+                </li>
+              <% }); %>
+            </ul>
+          <% } else { %>
+            <p>No electronic products found.</p>
+          <% } %>
+           
+    </div>
+
+   
+    <a href="/">Back to Home</a>    |
+    <a href="/prd/AllDepts">Back to All Depts</a>
+     
+</body>
+
+</html>
