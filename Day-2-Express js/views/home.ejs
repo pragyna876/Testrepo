@@ -1,0 +1,70 @@
+<html>
+<head>
+     <style>
+         
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #1111e92a;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    li {
+      text-align: center;
+      background-color: #fff;
+      border-radius: 8px;
+      margin: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 200px;
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin: 0;
+      color: #555;
+    }
+  </style>
+         
+       
+</head>
+
+<body>
+    <h1>User Details </h1>
+    <hr /> 
+    <ul>
+        <% for (let i = 0; i < userData.length; i++) { %>
+          <li>
+            <img src="<%= userData[i].avatar %>" alt="<%= userData[i].first_name %> <%= userData[i].last_name %>">
+            <p>Name: <%= userData[i].first_name %> <%= userData[i].last_name %></p>
+            <p>Email: <%= userData[i].email %></p>
+          </li>
+        <% } %>
+    
+
+        </ul>
+        
+    </div>
+
+</body>
+
+</html>

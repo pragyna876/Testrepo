@@ -1,0 +1,18 @@
+<html>
+<head>
+</head>
+<body>
+    <div style="border: 2px rgba(190, 25, 52, 0.299) solid; width: 500px; padding: 20px; background-color: aquamarine;">
+        <form action="/product" method="post">
+            <label for="pname">Product Name:</label>
+            <input type="text" name="pname" id=""><br><br>
+            <label for="price">Unit Price:</label>
+            <input type="number" id="price" name="price" required><br><br>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" required><br><br>
+            <input type="submit" value="Calculate Total"><br>
+            <p>Total Amount is: <%=GetTotal%> </p>
+        </form>
+    </div>
+</body>
+</html>

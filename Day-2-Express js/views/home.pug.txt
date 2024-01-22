@@ -1,0 +1,23 @@
+html
+  head   
+  body    
+    h3="Developing Web Applications using Express -- Pug View Engine"
+    hr
+
+    h3="Data As Scalar"
+    div  User Name :  #{uname}  <br/> 
+         User Age  :  #{age}  <br/> 
+         User Email  :  #{loc}  <br/> 
+    hr
+
+    h3="Data As Object"
+    div  Dept Number  :  #{deptObj.deptno}  <br/> 
+         Dept Name  :  #{deptObj.dname}  <br/> 
+         Dept Location  :  #{deptObj.loc}  <br/> 
+        
+    hr
+
+    h3="Data AS Array"
+    ul 
+        each item in citiesOfArray
+            li=item
