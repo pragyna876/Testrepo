@@ -1,0 +1,14 @@
+1. What are the request methods in http?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+HTTP (Hypertext Transfer Protocol) defines a set of request methods  that specify the desired action to be performed on a resource. These methods play a crucial role in facilitating communication between clients and servers. Some of the common HTTP request methods include: GET, POST, PUT, DELETE, PATCH, OPTIONS, and HEAD.
+
+
+
+2. Find the out the difference between GET and POST methods?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The main difference between GET and POST methods lies in how data is sent to the server. GET appends data to the URL, visible in the address bar, while POST sends data in the request body, making it more suitable for sensitive or large amounts of data.
+
+
+3. How to send the files as response in express js?	
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In Express.js, We can send files as a response using the res.sendFile() method. Simply provide the path to the file as an argument to this method in our route handler.
