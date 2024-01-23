@@ -1,0 +1,16 @@
+what is state 
+......................................
+
+IN React state represents the rendered value , i.e whats currently on the screen .
+every time the state of an object changes react rerender the component to the browser.
+
+
+Difference between props & state 
+.................................
+
+props are known as properties .
+it can be used pass data from one component another .
+it cannot  be modified
+
+state represent part of application that can change.
+each component can have its state .
